@@ -55,6 +55,22 @@ def figure2():
 def kidney():
     return render_template("product.html",
     product = "Kidney",img = "kidney.jpeg",desc ="high quality kidney",price ="1000")     
+@app.route('/product/heart')    
+def heart():
+    return render_template("product.html",
+    product = "heart",img = "heart.jpeg",desc ="nice healthy heart",price ="1066076")
+@app.route('/product/lung')    
+def lung():
+    return render_template("product.html",
+    product = "lung",img = "lungs.jpeg",desc ="nice healthy lung",price ="10676")
+@app.route('/product/liver')    
+def liver():
+    return render_template("product.html",
+    product = "liver",img = "liver.jpeg",desc ="nice healthy liver",price ="1087566076")
+@app.route('/product/eye')    
+def eye():
+    return render_template("product.html",
+    product = "eye",img = "eye.jpeg",desc ="nice healthy eye",price ="1066078376")            
 
 @app.route('/cart')
 def cart():
